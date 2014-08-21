@@ -149,7 +149,7 @@ p {
   font-size: 3em;
 }
 img.screen {
-  display: none;
+  width: 100%;
 }
 @media (min-width: 768px) {
   img.screen {
@@ -175,4 +175,14 @@ footer p {
 }
 .logos {
   background-color: white;
+}
+.three a {
+  color: #eee;
+}
+.three a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.three a:hover h3 {
+  text-decoration: underline;
 }
