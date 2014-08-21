@@ -36,12 +36,19 @@ h1 {
   font-weight: 400;
   margin: 0.3em 0;
   overflow: hidden;
-  width: 150px;
-  height: 35px;
-  background-size: 150px 35px;
+  width: 120px;
+  height: 28px;
+  background-size: 120px 28px;
   background-repeat: no-repeat;
   text-indent: 1000px;
   background-image: url('img/logo.png');
+}
+@media (min-width: 768px) {
+  h1 {
+    width: 150px;
+    height: 35px;
+    background-size: 150px 35px;
+  }
 }
 h2 {
   font-weight: 300;
@@ -81,7 +88,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 0 0.2em;
-  font-size: 2em;
+  font-size: 20px;
   margin-top: 14px;
 }
 nav i {
@@ -130,7 +137,12 @@ p {
   margin-bottom: 3em;
 }
 .three .col-sm-4 {
-  padding: 0 4em;
+  padding: 0 2em;
+}
+@media (min-width: 768px) {
+  .three .col-sm-4 {
+    padding: 0 4em;
+  }
 }
 .three {
 }
@@ -139,7 +151,12 @@ p {
   color: #000;
 }
 .pic .col-md-7 {
-  padding: 4em;
+  padding: 2em;
+}
+@media (min-width: 768px) {
+  .pic .col-md-7 {
+    padding: 4em;
+  }
 }
 .pic .col-md-5 {
   overflow: hidden;
