@@ -232,6 +232,28 @@ footer p {
   display: inline-block;
   vertical-align: middle;
 }
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .locu-white {
+    background-image: url('img/sprite@2x.png');
+    background-size: 205px 115px
+  }  
+}
+.footer-opacity {
+  opacity: .4;
+}
+.gd-attribution {
+  display: inline-block;
+  zoom: 1;
+  margin-left: 5px;
+  line-height: 100%;
+  font-size: 12px;
+  position: relative;
+  top: 9px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #999;
+  -webkit-font-smoothing: antialiased;
+}
 .logos {
   background-color: white;
 }
