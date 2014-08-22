@@ -9,98 +9,125 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
+  <!--[if lt IE 10]>
+    <style type="text/css">
+    .data-word, .time-word {
+      left: 0 !important;
+    }
+    </style>
+  <![endif]-->
 </head>
 
 <body>
 <div class="top">
-  <h1>chronology</h1>
-  <nav>
-    <ul>
-      <li>
-        <a href="https://github.com/Locu/chronology/archive/master.zip">
-          <i class="fa fa-download"></i> <span>Download</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Locu/chronology">
-          <i class="fa fa-github"></i> <span>Source</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Locu/chronology/blob/master/README.md">
-          <i class="fa fa-book"></i> <span>Docs</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <div class="row">
+    <h1>chronology</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://github.com/Locu/chronology/archive/master.zip">
+            <i class="fa fa-download"></i> <span>Download</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Locu/chronology">
+            <i class="fa fa-github"></i> <span>Source</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Locu/chronology/blob/master/README.md">
+            <i class="fa fa-book"></i> <span>Docs</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 <div class="container-fluid">
-  <div class="row pic">
-    <div class="col-xs-12 col-md-7">
-      <h4 style="margin-bottom: 25px">Tell stories with your data</h4>
-      <p style="margin-bottom: 35px">
-        The Chronology Project tackles three data-oriented tasks with three
-        powerful tools: Kronos (data collection), Metis (data analysis), and
-        Jia (data visualization). These tools are loosely coupled and stand
-        alone, but can speak with one-another: Metis can query data in Kronos,
-        and Jia can visualize the answers provided by Metis.
-        <br><br>
-        Kickstart your data exploration with our
-        <a href="#">getting started guide</a> or jump right in to the
-        <a href="#">source code</a> or <a href="#">docs.</a>
-      </p>
-      <a class="btn btn-primary btn-lg" href="https://github.com/Locu/chronology/blob/master/README.md#get-running-in-5-minutes">
-        <i class="fa fa-clock-o"></i>
-        5 minute quickstart
-      </a>
-    </div>
-    <div class="col-xs-12 col-md-5">
-      <img src="img/screen.png" class="screen">
-    </div>
-  </div>
-
-  <div class="three row">
-    <div class="cone col-xs-12 col-sm-4">
-      <a href="https://github.com/Locu/chronology/blob/master/kronos/README.md">
-        <i class="fa fa-database main-icon"></i>
-        <h3>
-          Kronos: Collect
-        </h3>
-      </a>
-      <p>Kronos is a time series storage engine that allows you to store and
-      retrieve timestamped JSON blobs from various backends (e.g., Cassandra,
-      Elastic Search).</p>
-    </div>
-    <div class="ctwo col-xs-12 col-sm-4">
-      <a href="https://github.com/Locu/chronology/blob/master/metis/README.md">
-        <i class="fa fa-search main-icon"></i>
-        <h3>
-          Metis: Analyze
-        </h3>
-      </a>
-      <p>Metis is a time series compute engine. It's currently implemented as a
-      thin HTTP endpoint wrapper around the Spark data processing engine.</p>
-    </div>
-    <div class="cthree col-xs-12 col-sm-4">
-      <a href="https://github.com/Locu/chronology/blob/master/jia/README.md">
-        <i class="fa fa-bar-chart-o main-icon"></i>
-        <h3>
-          Jia: Visualize
-        </h3>
-      </a>
-      <p>Jia is a visualization, dashboarding, and data exploration tool. It
-      can speak with Kronos and Metis. It answers questions for humans, rather
-      than for developers.</p>
+  <div class="hero">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <h2 style="margin-bottom: 25px">
+          It's <span class="data-word">data</span> <span class="time-word">time</span>.
+        </h2>
+        <p>
+          Chronology is a suite of open source tools to help you on your
+          data-to-answers journey.
+        </p>
+        <a href="#" class="btn btn-empty">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <a href="#" class="btn btn-empty">
+          <i class="fa fa-book"></i> Docs
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <img src="img/screen.png" class="screen">
+      </div>
     </div>
   </div>
-  <div></div>
-  <div class="logos">
-
+  <div class="content">
+    <div class="three row">
+      <h3>Tell stories with your data.</h3>
+      <h4>Chronology comes with all you need to turn metrics into insights.</h4>
+      <div class="additional">
+        <p style="margin-bottom: 35px">
+          The Chronology Project tackles three data-oriented tasks with three
+          powerful tools: Kronos (data collection), Metis (data analysis), and
+          Jia (data visualization). These tools are loosely coupled and stand
+          alone, but can speak with one-another: Metis can query data in Kronos,
+          and Jia can visualize the answers provided by Metis.
+          <br><br>
+          Kickstart your data exploration with our
+          <a href="#">getting started guide</a> or jump right in to the
+          <a href="#">source code</a> or <a href="#">docs.</a>
+        </p>
+        <a class="btn btn-primary btn-lg"
+           href="https://github.com/Locu/chronology/blob/master/README.md#get-running-in-5-minutes">
+          <i class="fa fa-clock-o"></i>
+          5 minute quickstart
+        </a>
+      </div>
+      <div class="cone col-xs-12 col-sm-4">
+        <a href="https://github.com/Locu/chronology/blob/master/kronos/README.md">
+          <i class="fa fa-database main-icon"></i>
+          <h4>
+            Kronos: Collect
+          </h4>
+        </a>
+        <p>Kronos is a time series storage engine that allows you to store and
+        retrieve timestamped JSON blobs from various backends (e.g., Cassandra,
+        Elastic Search).</p>
+      </div>
+      <div class="ctwo col-xs-12 col-sm-4">
+        <a href="https://github.com/Locu/chronology/blob/master/metis/README.md">
+          <i class="fa fa-search main-icon"></i>
+          <h4>
+            Metis: Analyze
+          </h4>
+        </a>
+        <p>Metis is a time series compute engine. It's currently implemented as a
+        thin HTTP endpoint wrapped around the Spark data processing engine.</p>
+      </div>
+      <div class="cthree col-xs-12 col-sm-4">
+        <a href="https://github.com/Locu/chronology/blob/master/jia/README.md">
+          <i class="fa fa-bar-chart-o main-icon"></i>
+          <h4>
+            Jia: Visualize
+          </h4>
+        </a>
+        <p>Jia is a visualization, dashboarding, and data exploration tool. It
+        can speak with Kronos and Metis. It answers questions for humans, rather
+        than for developers.</p>
+      </div>
+    </div>
   </div>
 </div>
 <footer>
-  <div class="locu-white footer-opacity"></div>
-  <div class="gd-attribution">A GoDaddy Team</div>
+  <div class="row">
+    <div class="locu-white footer-opacity"></div>
+    <div class="gd-attribution">A GoDaddy Team</div>
+  </div>
 </footer>
 </body>
 </html>
