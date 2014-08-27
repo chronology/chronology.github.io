@@ -1,0 +1,68 @@
+@-webkit-keyframes flicker {
+  0%   {fill-opacity: 0;}
+  24%  {fill-opacity: 0;}
+  25%  {fill-opacity: 1;}
+  29%  {fill-opacity: 1;}
+  30%  {fill-opacity: 0;}
+  59%  {fill-opacity: 0;}
+  60%  {fill-opacity: 1;}
+  64%  {fill-opacity: 1;}
+  65%  {fill-opacity: 0;}
+  69%  {fill-opacity: 0;}
+  70%  {fill-opacity: 1;}
+  74%  {fill-opacity: 1;}
+  75%  {fill-opacity: 0;}
+  89%  {fill-opacity: 0;}
+  90%  {fill-opacity: 1;}
+  94%  {fill-opacity: 1;}
+  95%  {fill-opacity: 0;}
+}
+@keyframes flicker {
+  0%   {fill-opacity: 0;}
+  24%  {fill-opacity: 0;}
+  25%  {fill-opacity: 1;}
+  29%  {fill-opacity: 1;}
+  30%  {fill-opacity: 0;}
+  59%  {fill-opacity: 0;}
+  60%  {fill-opacity: 1;}
+  64%  {fill-opacity: 1;}
+  65%  {fill-opacity: 0;}
+  69%  {fill-opacity: 0;}
+  70%  {fill-opacity: 1;}
+  74%  {fill-opacity: 1;}
+  75%  {fill-opacity: 0;}
+  89%  {fill-opacity: 0;}
+  90%  {fill-opacity: 1;}
+  94%  {fill-opacity: 1;}
+  95%  {fill-opacity: 0;}
+}
+@-webkit-keyframes movedash {
+  from {stroke-dashoffset: 0px;}
+  to {stroke-dashoffset: -24px;}
+}
+@keyframes movedash {
+  from {stroke-dashoffset: 0px;}
+  to {stroke-dashoffset: -24px;}
+}
+#path5909 {
+  -webkit-animation: flicker 3s infinite;
+  -webkit-animation-delay: 0s;
+  animation: flicker 3s infinite;
+  animation-delay: 0s;
+}
+#path6679 {
+  -webkit-animation: flicker 3s infinite;
+  -webkit-animation-delay: 0.2s;
+  animation: flicker 3s infinite;
+  animation-delay: 0.2s;
+}
+#path6681 {
+  -webkit-animation: flicker 3s infinite;
+  -webkit-animation-delay: 0.6s;
+  animation: flicker 3s infinite;
+  animation-delay: 0.6s;
+}
+.dotted-movement {
+  -webkit-animation: movedash 1s infinite linear;
+  animation: movedash 1s infinite linear;
+}
