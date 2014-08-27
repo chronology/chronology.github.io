@@ -15,7 +15,7 @@ a, a:hover, a:link, a:visited, a:focus {
 }
 .top .row {
   overflow: auto;
-  padding: 1em 1em;
+  padding: 0.4em 1em;
 }
 @media (min-width: 768px) {
   .top .row {
@@ -37,7 +37,7 @@ h1 {
   font-size: 2em;
   float: left;
   font-weight: 400;
-  margin: 0.3em 0;
+  margin: 0.5em 0;
   overflow: hidden;
   width: 120px;
   height: 28px;
@@ -51,17 +51,35 @@ h1 {
     width: 150px;
     height: 35px;
     background-size: 150px 35px;
+    margin: 0.3em 0;
   }
 }
-.hero .col-md-6:first-child {
-  padding-top: 60px;
+.hero .col-sm-6:first-child {
+  padding: 60px 15px;
+}
+@media (min-width: 768px) {
+  .hero .col-sm-6 {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    width: 49%;
+  }
 }
 h2 {
   display: inline-block;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3em;
   margin: 0 0 10px 0;
   color: #fff;
+}
+@media (min-width: 768px) {
+  h2 {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0 0 10px 0;
+    color: #fff;
+  }
 }
 @-webkit-keyframes fadeAndMove {
   from {opacity: 0; top: 0.5em;}
@@ -118,23 +136,44 @@ h2 {
   animation-fill-mode: forwards;
 }
 .hero p {
-  font-size: 1.5em;
-  width: 420px;
+  font-size: 1em;
+  width: 100%;
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .hero p {
+    font-size: 1.5em;
+    /*width: 420px;*/
+    margin-bottom: 30px;
+  }
 }
 .btn-empty {
   background: transparent;
   border: solid 1px #fff;
   color: #fff;
+  font-size: 0.8em;
 }
 .btn-empty:hover {
   color: #4A89DC;
   background: #fff;
 }
+@media (min-width: 768px) {
+  .btn-empty {
+    font-size: 1em;
+  }
+}
 .screen {
-  width: 90%;
-  margin: 2em;
+  width: 100%;
+  margin: 2em 0;
+  display: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 768px) {
+  .screen {
+    display: block;
+    width: 90%;
+    margin: 2em;
+  }
 }
 nav {
   float: right;
@@ -177,28 +216,48 @@ nav a span {
   margin-top: 50px;
   margin-bottom: 10px;
 }
+.content {
+  margin: 0 15px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .content {
+    text-align: left;
+  }
+}
 .content h3 {
-  font-size: 3.25em;
+  font-size: 2.5em;
   font-weight: 300;
   text-align: center;
   margin: 1em 0 0em 0;
   color: #222;
 }
+@media (min-width: 768px) {
+  .content h3 {
+    font-size: 3.25em;
+  }
+}
 .content h4 {
   font-weight: 300;
-  font-size: 1.6em;
-  color: #666;
+  font-size: 1.2em;
+  color: #6f6f6f;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .content h4 {
+    font-size: 1.6em;
+  }
 }
 .three {
   font-weight: 300;
+  margin-bottom: 3em;
+  text-align: center;
 }
 .three p {
   font-size: 16px;
   margin-top: 1em;
 }
 .three .col-sm-4 {
-  margin-bottom: 3em;
 }
 .pic {
   background-color: #fff;
@@ -225,7 +284,7 @@ nav a span {
   text-align: center;
 }
 .additional p {
-  text-align: left;
+  text-align: justify;
 }
 .additional .btn {
   color: white;
@@ -234,7 +293,7 @@ nav a span {
 footer {
   background-color: #333;
   margin: 0;
-  padding: 2em 0;
+  padding: 2em 15px;
 }
 footer p {
   margin: 0;
@@ -249,6 +308,9 @@ footer a:hover {
 }
 footer a.locu-link:hover {
   text-decoration: none;
+}
+footer .pull-right {
+  margin-top: 5px;
 }
 .locu-white {
   background-position: -138px 0;
@@ -284,7 +346,7 @@ footer a.locu-link:hover {
   background-color: white;
 }
 .three a {
-  color: #333;
+  color: #555;
   outline: none;
 }
 .three a:hover {
@@ -293,4 +355,37 @@ footer a.locu-link:hover {
 }
 .three a:hover h3 {
   text-decoration: underline;
+}
+.animated-dots {
+  width: 100%;
+}
+.feature h3 {
+  font-weight: 300;
+  margin-top: 0;
+}
+.feature {
+  padding: 32px 0;
+  border-top: solid 1px #ccc;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .feature {
+    text-align: left;
+    font-size: 0;
+  }
+  .feature .col-xs-12 {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    font-size: 14px;
+  }
+  .feature .img {
+    text-align: center;
+  }
+}
+.feature:last-child {
+  padding: 80px 0;
+}
+.feature:last-child h3 {
+  margin-bottom: 20px;
 }
